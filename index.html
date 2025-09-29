@@ -1,26 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>uzum market</title>
-    <!-- favicon -->
-     <link rel="icon" href="images/icons/logo.svg">
-    <!-- fonts -->
-     <link rel="stylesheet" href="fonts/Inter/stylesheet.css">
-     <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
-    <!-- css files -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uzum Market</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/icons/logo.svg" />
+  <!-- fonts -->
+  <link rel="stylesheet" href="fonts/Inter/stylesheet.css" />
+  <link rel="stylesheet" href="fonts/Roboto/stylesheet.css" />
+  <!-- swiper css file -->
+  <link rel="stylesheet" href="sass/vendors/swiper-bundle.css" />
+  <!-- css files -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <div class="wrapper">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
         <div class="container">
-            <header class="header">
-                <div class="header__top"></div>
-                 
-            </header>
+          <div class="header__top-content">
+            <div class="location-container">
+              <img src="images/icons/location-icon.svg" alt="location-icon" />
+              <div class="region-check">
+                <span class="city">Shahar: </span>
+                <span class="city-name">Toshkent</span>
+              </div>
+              <a class="pickup-points" href="#">Topshirish punktlari</a>
+            </div>
+            <div class="center-banner">
+              <p>Buyurtmangizni 1 kunda bepul yetkazib beramiz!</p>
+            </div>
+            <div class="header__top-right-links">
+              <a href="#!">Savol-javoblar</a>
+              <a href="#!">Buyurtmalarim</a>
+              <button class="language-sect">
+                <img src="images/icons/uzbek-logo.svg" alt="uzb logo" />
+                <select name="language" id="language" title="language">
+                  <option value="uz">O'zbekcha</option>
+                  <option value="ru">Русский</option>
+                  <option value="en">English</option>
+                </select>
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-content">
+            <div class="top">
+              <a href="#!" class="logo">
+                <img src="images/icons/logo.svg" alt="uzum market logo" />
+              </a>
+              <div class="search-sect">
+                <div class="catalog">
+                  <button class="catalog-btn">
+                    <img src="images/icons/catalog-icon.svg" alt="catalog-btn">
+                  </button>
+                  <span>Katalog</span>
+                </div>
+                <div class="search-bar">
+                  <input type="text" placeholder="Mahsulotlr va turkmlar izlash">
+                  <button class="search-btn">
+                    <img src="images/icons/search-icon.svg" alt="search-btn">
+                  </button>
+                </div>
+              </div>
+              <div class="store-action-buttons">
+                <div class="action profile-action">
+                  <a href="#!">
+                    <img src="images/icons/profile-icon.svg" alt="profile-icon">
+                    <span>Kirish</span>
+                  </a>
+                </div>
+                <div class="action favorites-action">
+                  <a href="#!">
+                    <img src="images/icons/heart-icon.svg" alt="favorites-icon">
+                    <span>Saralangan</span>
+                  </a>
+                </div>
+                <div class="action basket-action">
+                  <a href="#!">
+                    <img src="images/icons/basket-icon.svg" alt="basket-icon">
+                    <span>Savat</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="nav">
+                <div class="credit">
+                  <a href="#!">
+                    <img src="images/icons/credit-icon.svg" alt="credit-icon">
+                    <span>Muddatli to'lov</span>
+                  </a>
+                </div>
+                <div class="categories">
+                  <a class="category-item" href="#!">Elektronika</a>
+                  <a class="category-item" href="#!">Maishiy texnika</a>
+                  <a class="category-item" href="#!">Kiyim</a>
+                  <a class="category-item" href="#!">Poyabzallar</a>
+                  <a class="category-item" href="#!">Aksessuarlar</a>
+                  <a class="category-item" href="#!">Goʻzallik va parvarish</a>
+                  <a class="category-item" href="#!">Salomatlik</a>
+                  <a class="category-item" href="#!">Uy-roʻzgʻor buyumlari</a>
+                  <a class="category-item" href="#!">Qurilish va taʼmirlash</a>
+                </div>
+                <div>
+                  <button class="more-category">Yana
+                    <img src="images/icons/chevron-down-gray.svg" alt="chevron-down-gray">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content all-products">
+          <!-- Swiper -->
+          <div class="swiper Hero-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="product-link" href="#!">
+                  <img class="slide-img" src="images/swiper-slide1.png" alt="slide1" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="product-link" href="#!">
+                  <img class="slide-img" src="images/swiper-slide2.jpg" alt="slide2" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="product-link" href="#!">
+                  <img class="slide-img" src="images/swiper-slide3.png" alt="slide3" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="product-link" href="#!">
+                  <img class="slide-img" src="images/swiper-slide4.png" alt="slide4" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="product-link" href="#!">
+                  <img class="slide-img" src="images/swiper-slide5.png" alt="slide5" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <img src="images/icons/arrow-right.svg" alt="">
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/icons/arrow-left.svg" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <section class="cheap-prices">
+            <div class="title">
+              <h1>Arzon narxlar</h1>
+              <a href="#!">
+                <img src="images/icons/right-arrow.svg" alt="">
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <!-- js files -->
+    <script src="sass/vendors/swiper-bundle.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
