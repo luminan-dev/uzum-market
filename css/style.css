@@ -1241,6 +1241,8 @@ nav div {
 
 .product-section .container {
   display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .product-section-title {
@@ -1353,6 +1355,86 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+
+.ui-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2em;
+}
+
+.ui-title {
+  font-family: "Inter";
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-top: 24px;
+}
+
+.empty-page-info {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+  font-style: inherit;
+  margin-block: 24px;
+}
+
+.main-page-link {
+  padding: 12px;
+  background-color: #e8e8e8;
+  border-radius: 4px;
+}
+
+.heart-btn {
+  cursor: pointer;
+  color: #8b8b8b;
+  font-size: 24px;
+  transition: transform 0.12s ease, color 0.12s ease;
+}
+
+.heart-btn:hover {
+  transform: scale(1.07);
+}
+
+/* liked holat */
+.heart-btn.liked {
+  color: #e63946;
+  transform: scale(1.12);
+}
+
+/* header favorite count (optional) */
+.fav-count {
+  display: inline-block;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 999px;
+  background: #e63946;
+  color: #fff;
+  margin-left: 6px;
+}
+
+/* mini toast (feedback) */
+.mini-toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.12s ease, transform 0.14s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
