@@ -1437,4 +1437,89 @@ hr {
   transition: opacity 0.12s ease, transform 0.14s ease;
 }
 
+#uzm-login-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  font-family: Inter, Roboto, system-ui, sans-serif;
+}
+
+#uzm-login-modal[aria-hidden=false] {
+  display: flex;
+}
+
+.uzm-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.uzm-panel {
+  position: relative;
+  width: 92%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  text-align: center;
+}
+
+.uzm-close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.uzm-brand {
+  font-weight: 700;
+  color: #6b21a8;
+  margin-bottom: 6px;
+}
+
+.uzm-title {
+  margin: 6px 0 14px;
+  font-size: 20px;
+}
+
+.uzm-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.uzm-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #6b21a8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.uzm-btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.uzm-note {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #666;
+}
+
 /*# sourceMappingURL=style.css.map */
